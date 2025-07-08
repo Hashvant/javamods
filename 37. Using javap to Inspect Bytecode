@@ -1,0 +1,12 @@
+public class BytecodeInspection {
+    public int add(int a, int b) {
+        return a + b;
+    }
+    
+    public static void main(String[] args) {
+        BytecodeInspection example = new BytecodeInspection();
+        System.out.println("Sum: " + example.add(5, 3));
+        // Run: javac BytecodeInspection.java
+        // Then: javap -c BytecodeInspection
+    }
+}
